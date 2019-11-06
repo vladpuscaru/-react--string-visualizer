@@ -16,4 +16,6 @@ Simple App made in React.js which let's you modify your text based on a visual g
 ### - `npm start`
 The project will be available at [http://localhost:3000](http://localhost:3000).
 
+![string_visualizer](https://user-images.githubusercontent.com/28822224/68335180-a80a1d00-00e4-11ea-8e55-ced99ba18f09.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
