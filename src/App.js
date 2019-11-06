@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
+import SideBar from './SideBar/SideBar'
+import Content from './Content/Content'
+import Visualizer from './Visualizer/Visualizer'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  state = {
+    input: ''
+  }
+
+  onInputChangeHandler = (event) => {
+    this.setState({
+      input: event.target.value
+    });
+  }
+
+  onClickHandler = (charIndex) => {
+    let inputArray = this.state.input.split('');
+    inputArray.splice(charIndex, 1);
+    const input = inputArray.join('');
+
+    this.setState({
+      input: input
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <div className="header">
+          <h1>String Visualizer App</h1>
+          <p>Makes your life better!</p>
+        </div>
+        <div className="container">
+          <SideBar />
+          <div className="content">
+            <Content 
+              input = { this.state.input }
+              changeHandler = { this.onInputChangeHandler } />
+            <Visualizer 
+              input = { this.state.input } 
+              clickHandler = { this.onClickHandler } />
+          </div>
+        </div>
+        <div id="copy">&copy; Hidden Maze Game. Vlad Puscaru 2019</div>
+      </div>
+    );
+  }
 }
 
 export default App;

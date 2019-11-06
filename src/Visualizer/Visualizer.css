@@ -1,0 +1,21 @@
+.Visualizer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Visualizer .Char {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  margin: 0 2px 2px 0;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.Visualizer .Char:hover {
+  background-color: red;
+  color: #fff;
+}

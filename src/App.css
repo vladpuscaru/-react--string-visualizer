@@ -1,22 +1,53 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#copy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 11px;
   text-align: center;
+  background-color: #001c26;
+  padding: 25px 0;
+  width: 100%;
+  color: #fff;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 -10px 6px -6px #777;
 }
 
-.App-logo {
-  height: 40vmin;
+p, h1 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 50px;
+  background-color: #001c26;
+  color: #fff;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.container {
+  width: 80%;
+  height: 65vh;
+  max-width: 1180px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #09d3ac;
+.content {
+  padding: 0 50px;
+  width: 75%;
+  box-sizing: border-box;
+  overflow-y: auto;
 }

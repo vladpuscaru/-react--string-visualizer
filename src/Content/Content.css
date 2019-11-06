@@ -1,0 +1,8 @@
+.Content textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  margin: 25px 0;
+}
