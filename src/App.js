@@ -44,7 +44,7 @@ class App extends React.Component {
               clickHandler = { this.onClickHandler } />
           </div>
         </div>
-        <div id="copy">&copy; Hidden Maze Game. Vlad Puscaru 2019</div>
+        <div id="copy">&copy; String Visualizer App. Vlad Puscaru 2019</div>
       </div>
     );
   }
